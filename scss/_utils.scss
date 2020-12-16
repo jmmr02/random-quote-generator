@@ -1,0 +1,8 @@
+// Functions
+@function toRem($size, $baseSize: 16px) {
+	@return ($size / $baseSize) * 1rem;
+}
+
+@function toEm($size, $baseSize: 16px) {
+	@return ($size / $baseSize) * 1em;
+}

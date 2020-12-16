@@ -1,0 +1,30 @@
+{
+  "name": "random-quote-generator",
+  "version": "1.0.0",
+  "description": "A random quote generator project",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -o css/ scss/",
+    "postcss": "postcss -r css/*",
+    "build:css": "npm run scss && npm run postcss",
+    "watch:css": "onchange scss/*.scss -- npm run build:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmmr02/random-quote-generator.git"
+  },
+  "author": "jmmr02",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmmr02/random-quote-generator/issues"
+  },
+  "homepage": "https://github.com/jmmr02/random-quote-generator#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "cssnano": "^4.1.10",
+    "node-sass": "^5.0.0",
+    "onchange": "^7.1.0",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1"
+  }
+}
